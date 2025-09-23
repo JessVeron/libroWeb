@@ -1,0 +1,261 @@
+body {margin:0;
+    padding:0;
+    box-sizing:border-box;
+    overflow-x: hidden;
+   /*background-image: linear-gradient(to top, #466daf, #5d82bb, #7597c8, #8eacd3, #a8c1df);*/
+     background-image: url(/assets/images/fondo.png) ;
+      background-position: center;
+    }
+
+
+    .tagesschrift-regular {
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+
+}
+
+header{
+    background-image: url('/assets/images/tambores.png');
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+ 
+}
+
+
+h1,h2,h3   {
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    
+   }        
+
+p{
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: large;
+}
+nav {
+      background-color: #1D4F91; /* Color de fondo de la barra de navegación */
+      margin: 0%;
+      padding: 10px 0; /* Espaciado arriba y abajo */
+      text-align: center; /* Centrar el contenido */
+      position: fixed;
+      top: 0%;
+      width: 100%;
+      z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
+      opacity: 0.9; /* Hace que la barra de navegación sea un poco transparente */
+    }
+   /* Elimina las viñetas y el relleno/margen por defecto de la lista */
+    nav ul {
+      list-style-type: none; /* Elimina las viñetas */
+      padding: 0;
+      margin: 0;
+      margin-left: 10%;
+    }
+
+    /* Opción 1: Con display: inline para los <li> */
+    nav li {
+      display: inline-block; /* Alinear los elementos de lista en línea */
+      justify-content: space-evenly;/* Espacio entre los elementos */
+      width: auto; /* Ancho automático para que se ajuste al contenido */   
+      }
+    nav a {
+      font-family: tagesschrift, system-ui;  
+      text-decoration: none; /* Elimina el subrayado de los enlaces */
+      color: #ffffff; /* Color del texto */
+      padding: 10px 15px; /* Espaciado alrededor del texto */
+    }
+
+   
+    section {
+      padding: 1rem;
+      margin: 1rem;
+      margin-top: 2rem; /* Añade un margen superior para evitar que el contenido quede oculto detrás de la barra de navegación */
+     
+      
+    }
+
+ 
+
+    footer {
+    background-image: url('/assets/images/tambores.png');
+    color: white;
+    text-align: left;
+    padding: 10px 0;
+    margin: 0%;
+  }
+
+
+  #fotoHernan {
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }
+
+  #fotoPortada{
+        object-fit: contain;
+        cursor: pointer; /* Muestra un cursor que indica que es interactivo */
+  }
+
+  #fotoPortada img { 
+       
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease; /* Añade una transición suave al efecto */
+  }
+
+  #fotoPortada:hover img {
+        transform: scale(1.1); /* Escala la imagen al 110% cuando se pasa el cursor por encima */
+  }
+  #section2 {
+   margin:0%;
+   padding:0%;
+  }
+
+   .iframe-container {
+    position: relative;
+    width: 100%;
+    height: 760px; /* Vuelve a usar una altura fija para escritorio */
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+ #Copyright {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-style: italic;   
+    color: white;
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    nav ul {
+      text-align: center; /* Centrar el contenido en pantallas pequeñas */
+      margin-left: 0; /* Elimina el margen izquierdo */
+    }
+    nav li {
+      display: block; /* Alinear los elementos de lista en bloque */
+      margin: 5px 0; /* Añade un poco de espacio entre los elementos */
+      width: auto; /* Ancho automático para que se ajuste al contenido */
+    }
+  } 
+
+/* Media Queries para pantallas pequeñas */
+/* Ajustes específicos para dispositivos con un ancho máximo de 768px (tabletas y móviles) */ 
+ 
+@media (max-width: 768px) {
+  /* ... existing nav styles ... */
+
+  body {
+    background-image: url(/assets/images/fondo.png); /* New background for mobile */
+    background-size: cover; /* Ensures the background covers the entire screen */
+  }
+
+  h1, h2, h3 {
+    font-size: 2rem; /* Reduces the font size for headings */
+  }
+
+  p {
+    font-size: 1rem; /* Reduces the font size for paragraphs */
+  }
+}
+
+
+@media (max-width: 768px) {
+  /* ... */
+
+  header .row {
+    flex-direction: column; /* Stacks the columns vertically */
+    }
+
+  header .col-5,
+  header .col-4 {
+    width: 100%; /* Makes columns take up the full width */
+    margin-bottom: 1rem; /* Adds space between the stacked images */
+  }
+
+  header img {
+    width: 100%; /* Ensures images are responsive */
+    height: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  /* ... */
+
+  section .row {
+    flex-direction: column; /* Stacks the columns vertically */
+  }
+
+  section .col-6 {
+    width: 100%; /* Makes columns take up the full width */
+  }
+
+  #fotoPortada img {
+    width: 80%; /* Reduces the image size */
+    margin: auto; /* Centers the image */
+  }
+
+  #fotoHernan {
+    width: 80%; /* Reduces the image size */
+    height: auto;
+    margin: 1rem auto; /* Adds margin and centers the image */
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  /* ... */
+
+  #section6 .row {
+    flex-direction: column; /* Stacks the images vertically */
+  }
+
+  #section6 .col-4 {
+    width: 100%; /* Makes columns take up the full width */
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  /* ... */
+
+  footer .row {
+    flex-direction: column; /* Stacks the columns vertically */
+    text-align: center; /* Centers the content */
+  }
+
+  footer .col-4 {
+    width: 100%; /* Makes columns take up the full width */
+    margin-bottom: 1rem;
+  }
+
+  footer img {
+    width: 30%; /* Adjusts the size of the sponsor logos */
+    height: auto;
+  }
+}
+  
