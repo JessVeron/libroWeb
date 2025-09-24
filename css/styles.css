@@ -167,6 +167,7 @@ nav {
   body {
     background-image: url(../assets/images/fondo.png); /* New background for mobile */
     background-size: cover; /* Ensures the background covers the entire screen */
+    overflow-x: hidden;
   }
 
   h1, h2, h3 {
