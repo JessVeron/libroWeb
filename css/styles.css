@@ -3,7 +3,7 @@ body {margin:0;
     box-sizing:border-box;
     overflow-x: hidden;
    /*background-image: linear-gradient(to top, #466daf, #5d82bb, #7597c8, #8eacd3, #a8c1df);*/
-     background-image: url(/assets/images/fondo.png) ;
+     background-image: url(../assets/images/fondo.png) ;
       background-position: center;
     }
 
@@ -17,7 +17,7 @@ body {margin:0;
 }
 
 header{
-    background-image: url('/assets/images/tambores.png');
+    background-image: url('../assets/images/tambores.png');
     background-size: cover;
     background-position: center;
     padding-top: 80px;
@@ -84,7 +84,7 @@ nav {
  
 
     footer {
-    background-image: url('/assets/images/tambores.png');
+    background-image: url('../assets/images/tambores.png');
     color: white;
     text-align: left;
     padding: 10px 0;
@@ -165,7 +165,7 @@ nav {
   /* ... existing nav styles ... */
 
   body {
-    background-image: url(/assets/images/fondo.png); /* New background for mobile */
+    background-image: url(../assets/images/fondo.png); /* New background for mobile */
     background-size: cover; /* Ensures the background covers the entire screen */
   }
 
