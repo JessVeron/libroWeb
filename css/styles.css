@@ -44,7 +44,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-left: 10%;
+  
 }
 
 nav li {
@@ -80,7 +80,7 @@ footer {
 }
 
 #fotoHernan {
-    border-radius: 15px ;
+    border-radius: 15px 2px;
    
 }
 
@@ -105,6 +105,9 @@ footer {
     margin-bottom: 1rem;
 }
 
+#border{
+    border: solid 4px white;
+}
 h4 {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
