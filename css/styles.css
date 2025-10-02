@@ -23,12 +23,13 @@ h1, h2, h3 {
 
 p {
     font-family: "Tagesschrift", system-ui;
-    font-weight: 400;
+    font-weight: 350;
     font-style: normal;
     color: #F0F4FF;
     font-size: large;
     text-align: justify;
     margin-left:2% ;
+    padding: 2%;
 }
 
 nav {
@@ -62,13 +63,15 @@ nav a {
     color: #ffffff;
     
 }
-
 header {
-    background-image: url('../assets/images/tambores.png');
+    background-image: url(../assets/images/portada-recorte.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     padding-left: 0%;
-    padding-top: 5rem;
+    margin-left: 0%;
+    width: 100vw;
+    height: 100vh;
 }
 
 section{
@@ -87,20 +90,7 @@ footer {
    
 }
 
-#fotoPortada {
-    object-fit: contain;
-    cursor: pointer;
-}
 
-#fotoPortada img {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.3s ease;
-}
-
-#fotoPortada:hover img {
-    transform: scale(1.1);
-}
 
 #Copyright {
     text-align: center;
@@ -126,19 +116,45 @@ h4 {
 @media (max-width: 768px) {
   html {
     overflow-x: hidden;
-
   }  
+
   body {
     background-color:#2A3B8D;
-    
-    padding:1%;
     position: relative;
+    margin-top: 4%;
     overflow-x: hidden;
   }
-
+  
+ header{
+    background-image: url(../assets/images/portada.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 0%;
+    padding-top: 2% ;
+    width: 100vw;
+    height: 100vh;
+ }
 
   .carousel-item img {
     width: 80% !important;
     height: 50%;
+  }
+
+  .video-container{
+    position: relative;
+    padding-bottom: 70%;
+    padding-top: 0%;
+    height: 0;
+    overflow: hidden;
+  }
+   
+  .video-container iframe {
+    position: absolute;
+    top: 1%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    padding: 2px;
   }
 }
