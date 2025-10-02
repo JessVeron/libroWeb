@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(../assets/images/fondo.png);
+    background-color:#2A3B8D ;
     background-position: center;
     overflow-x: hidden;
 }
@@ -16,20 +16,23 @@ h1, h2, h3 {
     font-style: normal;
     text-transform: uppercase;
     margin-left: 1%;
+    color: #F0F4FF;
+
+
 }        
 
 p {
     font-family: "Tagesschrift", system-ui;
     font-weight: 400;
     font-style: normal;
-    color: black;
+    color: #F0F4FF;
     font-size: large;
     text-align: justify;
     margin-left:2% ;
 }
 
 nav {
-    background-color: #1D4F91;
+    background-color: #BCC5E6;
     margin: 0;
     padding: 10px 0;
     text-align: center;
@@ -73,7 +76,7 @@ section{
 }
 footer {
     background-image: url('../assets/images/tambores.png');
-    color: white;
+    color: #F0F4FF;
     text-align: left;
     padding: 10px 0;
     margin-top: 1%;
@@ -106,7 +109,7 @@ footer {
 }
 
 #border{
-    border: solid 4px white;
+    border: solid 4px #BCC5E6;
 }
 h4 {
     font-family: 'Times New Roman', Times, serif;
@@ -126,7 +129,8 @@ h4 {
 
   }  
   body {
-    background-image: url(../assets/images/fondo-mobile.png);
+    background-color:#2A3B8D;
+    
     padding:1%;
     position: relative;
     overflow-x: hidden;
